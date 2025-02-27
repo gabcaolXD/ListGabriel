@@ -1,0 +1,165 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    height: 100vh;
+    background:linear-gradient(90deg,rgb(242, 0, 255)0%, rgba(0,212, 255)100%);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cabeçalho */
+header {
+    color: aliceblue;
+    font-style: oblique;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Seção principal */
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.15);
+    border: 2px solid white;
+
+}
+
+/* Rodapé */
+footer {
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Div com alinhamento centralizado */
+div {
+
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
+ 
+}
+div#container1 {
+
+   
+        background: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 400px;
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Alinha os itens verticalmente */
+        margin: 0 auto; /* Centraliza a div na página */
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+    }
+
+/* Estilo de input */
+input {
+    border: 2px solid rgb(108, 106, 231);
+    border-radius: 3px;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+input:hover {
+
+    box-shadow:  2px 2px 2px rgb(108, 106, 231);;
+}
+/* Botão de adicionar */
+button#add {
+     flex: 1;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 200px;
+    height: 100%;
+    color: #fff;
+    margin-left: 12px;
+    cursor: pointer;
+    background-color: rgb(72, 72, 224);
+    padding: 7px;
+    transition: background-color 0.3s ease;
+    box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.2);}
+
+
+button#add:hover {
+    box-shadow: 3px 4px 7px rgb(72, 72, 224);
+    transform: translateY(-2px);
+    transition: transform 0.5s ease;
+}
+
+/* Estilo da tarefa */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    align-items: flex-start;
+
+   
+}
+
+/* Estilo do botão de excluir */
+.delete {
+    background-color: #4530e4;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete:hover {
+    background-color: #cc0000;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(247, 24, 24, 0.2);
+    transition: transform 0.5s ease;
+    transform: translateY(-4px);
+}
+
+/* Texto da tarefa */
+.task-item p {
+    margin: 0;
+    font-size: 16px;
+    word-wrap: break-word;
+    flex-grow: 1;
+    text-align: left;
+    cursor: pointer;
+
+
+}
+
+
+/* Container das tarefas */
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
